@@ -7,9 +7,8 @@ package Computer_6;
  */
 class Withdrawal implements Runnable {
     int money = 1000;
-    final Object lock = new Object();
+     final Object lock = new Object();
 
-    @Override
     public void run() {
         Thread thread = Thread.currentThread();
         while (true) {
